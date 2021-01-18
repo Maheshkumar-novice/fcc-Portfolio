@@ -8,6 +8,28 @@
 body {
   color: white;
 }
+button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  margin-top: 50px;
+  padding: 10px;
+  width: 150px;
+  outline: none;
+}
+img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 1px soid black;
+}
 #navbar {
   background-color: #333;
   background-image: linear-gradient(to bottom, #333, #000);
@@ -19,21 +41,25 @@ body {
   left: 0;
   width: 100%;
   z-index: 10;
-  border-bottom: 1px solid #ff0;
+  border-bottom: 1px solid purple;
 }
 
 #nav-list {
   display: flex;
 }
 #nav-list li {
+  opacity: 0.8;
   list-style: none;
   margin: 1.5rem;
 }
-
+#nav-list li:hover {
+  opacity: 1;
+}
 #welcome-section {
   background-color: #333;
   background-image: linear-gradient(to bottom right, #333, #000);
   height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +73,7 @@ body {
 }
 
 #welcome-section p {
+  color: purple;
   font-family: "Courier New", Courier, monospace;
   font-size: 40px;
   font-style: italic;
@@ -55,6 +82,7 @@ body {
   height: 100vh;
   background-color: #333;
   background-image: linear-gradient(to top right, #333, #000);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +113,66 @@ body {
 #toolkit h2 {
   font-size: 60px;
   font-family: "Courier New", Courier, monospace;
-  border-bottom: 1px solid #fff;
+  text-decoration: underline;
+}
+#projects {
+  background-color: #333;
+  background-image: linear-gradient(to bottom right, #333, #000);
+  padding-top: 20vh;
+  max-height: 240vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.project-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+#projects img {
+  margin: 20px;
+  height: 300px;
+  max-width: 500px;
+  object-fit: scale-down;
+  border-bottom: 1px solid #333;
+}
+#projects .project-flex a {
+  border-radius: 10px;
+  opacity: 0.9;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: transparent;
+  border: 2px solid #333;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects .project-flex a:hover {
+  opacity: 1;
+}
+#projects a > p {
+  padding-bottom: 10px;
+}
+#projects h2 {
+  margin-bottom: 100px;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+}
+#contact {
+  background-color: #333;
+  background-image: linear-gradient(to top right, #333, #000);
+  height: 100vh;
 }
 @media (max-width: 860px) {
   #welcome-section h1 {
@@ -93,5 +180,11 @@ body {
   }
   #welcome-section p {
     font-size: 20px;
+  }
+  #toolkit h2 {
+    font-size: 40px;
+  }
+  #toolkit ul li {
+    font-size: 30px;
   }
 }
