@@ -30,6 +30,9 @@ button:hover {
   background-color: white;
   border: 1px soid black;
 }
+section i {
+  padding: 10px;
+}
 #navbar {
   background-color: #333;
   background-image: linear-gradient(to bottom, #333, #000);
@@ -79,7 +82,8 @@ button:hover {
   font-style: italic;
 }
 #toolkit {
-  height: 100vh;
+  padding-top: 15vh;
+  /* height: 100vh; */
   background-color: #333;
   background-image: linear-gradient(to top right, #333, #000);
 
@@ -111,7 +115,7 @@ button:hover {
   background-color: #fff;
 }
 #toolkit h2 {
-  font-size: 60px;
+  font-size: 40px;
   font-family: "Courier New", Courier, monospace;
   text-decoration: underline;
 }
@@ -119,7 +123,8 @@ button:hover {
   background-color: #333;
   background-image: linear-gradient(to bottom right, #333, #000);
   padding-top: 20vh;
-  max-height: 240vh;
+  /* height: 180vh;
+  max-height: 240vh; */
 
   display: flex;
   flex-direction: column;
@@ -166,13 +171,55 @@ button:hover {
   margin-bottom: 100px;
   text-decoration: underline;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   font-family: "Courier New", Courier, monospace;
 }
 #contact {
   background-color: #333;
   background-image: linear-gradient(to top right, #333, #000);
-  height: 100vh;
+  padding-top: 20vh;
+  /* height: 100vh; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#contact h2 {
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#contact div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+}
+#contact div #in-div {
+  /* display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  row-gap: 1px;
+  column-gap: 1px; */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#contact p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer {
+  height: 10vh;
 }
 @media (max-width: 860px) {
   #welcome-section h1 {
