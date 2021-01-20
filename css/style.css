@@ -8,7 +8,7 @@
 body {
   color: white;
 }
-button {
+/* button {
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
   border: 1px solid white;
@@ -18,21 +18,44 @@ button {
   padding: 10px;
   width: 150px;
   outline: none;
-}
+} */
 img {
   display: block;
   width: 100%;
   border-radius: 5px;
 }
-button:hover {
+/* button:hover {
   cursor: pointer;
   color: black;
   background-color: white;
   border: 1px soid black;
+} */
+#toolkit a,
+#projects #more,
+#welcome-section a {
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  padding: 10px;
+  margin: 20px;
+  border: 3px solid white;
+  /* border-radius: 10px; */
+  transition: all ease-in-out 0.3s;
+}
+#toolkit a:hover,
+#projects #more:hover,
+#welcome-section a:hover {
+  color: black;
+  background-color: white;
 }
 section i {
   padding: 10px;
 }
+
+/* navbar */
 #navbar {
   background-color: #333;
   background-image: linear-gradient(to bottom, #333, #000);
@@ -50,14 +73,18 @@ section i {
 #nav-list {
   display: flex;
 }
+
 #nav-list li {
   opacity: 0.8;
   list-style: none;
   margin: 1.5rem;
 }
+
 #nav-list li:hover {
   opacity: 1;
 }
+
+/* welcome */
 #welcome-section {
   background-color: #333;
   background-image: linear-gradient(to bottom right, #333, #000);
@@ -69,6 +96,7 @@ section i {
   align-items: center;
   gap: 30px;
 }
+
 #welcome-section h1 {
   font-weight: normal;
   font-family: "Courier New", Courier, monospace;
@@ -81,6 +109,8 @@ section i {
   font-size: 40px;
   font-style: italic;
 }
+
+/* toolkit */
 #toolkit {
   padding-top: 15vh;
   /* height: 100vh; */
@@ -93,6 +123,7 @@ section i {
   align-items: center;
   gap: 30px;
 }
+
 #toolkit ul {
   font-family: "Courier New", Courier, monospace;
   display: flex;
@@ -100,6 +131,7 @@ section i {
   align-items: center;
   flex-wrap: wrap;
 }
+
 #toolkit ul li {
   list-style: none;
   font-size: 40px;
@@ -109,16 +141,20 @@ section i {
   border-radius: 10px;
   cursor: pointer;
 }
+
 #toolkit ul li:hover {
   border: 3px solid white;
   color: purple;
   background-color: #fff;
 }
+
 #toolkit h2 {
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Courier New", Courier, monospace;
   text-decoration: underline;
 }
+
+/* projects */
 #projects {
   background-color: #333;
   background-image: linear-gradient(to bottom right, #333, #000);
@@ -131,6 +167,7 @@ section i {
   justify-content: flex-start;
   align-items: center;
 }
+
 .project-flex {
   display: flex;
   flex-wrap: wrap;
@@ -138,6 +175,7 @@ section i {
   align-items: center;
   gap: 100px;
 }
+
 #projects img {
   margin: 20px;
   height: 300px;
@@ -145,6 +183,7 @@ section i {
   object-fit: scale-down;
   border-bottom: 1px solid #333;
 }
+
 #projects .project-flex a {
   border-radius: 10px;
   opacity: 0.9;
@@ -161,24 +200,28 @@ section i {
   justify-content: center;
   align-items: center;
 }
+
 #projects .project-flex a:hover {
   opacity: 1;
 }
+
 #projects a > p {
   padding-bottom: 10px;
 }
+
 #projects h2 {
   margin-bottom: 100px;
   text-decoration: underline;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Courier New", Courier, monospace;
 }
+
+/* contact */
 #contact {
   background-color: #333;
   background-image: linear-gradient(to top right, #333, #000);
-  padding-top: 20vh;
-  /* height: 100vh; */
+  height: 85vh;
 
   display: flex;
   flex-direction: column;
@@ -186,13 +229,15 @@ section i {
   align-items: center;
   gap: 10px;
 }
+
 #contact h2 {
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Courier New", Courier, monospace;
   text-decoration: underline;
   text-align: center;
   margin-bottom: 50px;
 }
+
 #contact div {
   display: flex;
   flex-wrap: wrap;
@@ -201,26 +246,54 @@ section i {
   gap: 30px;
   /* flex-wrap: wrap; */
 }
-#contact div #in-div {
+
+#contact div .in-div {
+  border: 1px solid purple;
+  padding: 15px;
+  border-radius: 10px;
+
   /* display: grid;
   grid-template-columns: 1fr;
   text-align: center;
   row-gap: 1px;
   column-gap: 1px; */
-  display: flex;
 
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
+
+#contact div .in-div:hover {
+  background-color: white;
+  color: purple;
+  cursor: pointer;
+}
+
 #contact p {
   font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
-footer {
-  height: 10vh;
+
+#contact a {
+  text-decoration: none;
+  color: white;
 }
+
+/* footer */
+footer {
+  background-color: #333;
+  background-image: linear-gradient(to bottom right, #333, #000);
+  height: 10vh;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  border-top: 1px solid white;
+  padding: 50px;
+}
+
+/* media queries */
 @media (max-width: 860px) {
   #welcome-section h1 {
     font-size: 40px;
@@ -228,7 +301,9 @@ footer {
   #welcome-section p {
     font-size: 20px;
   }
-  #toolkit h2 {
+  #toolkit h2,
+  #projects h2,
+  #contact h2 {
     font-size: 40px;
   }
   #toolkit ul li {
